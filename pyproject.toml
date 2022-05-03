@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "rene"
+version = "0.1.0"
+description = ""
+authors = ["Romeo Disca <romeo.disca@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.22.3"
+
+
+
+[tool.poetry.dev-dependencies]
+nose2 = "^0.11.0"
+pdoc3 = { version = "^0.10.0", python="^3.8" }
+Nuitka = "^0.7.7"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rene = "scripts:rene"
+nuitka = "scripts:nuitka"
+test = "scripts:test"
