@@ -8,10 +8,11 @@ let
     };
 in myAppEnv.env.overrideAttrs (oldAttrs: {
     buildInputs = with pkgs ; [
-	python310
+	    python310
         direnv
         poetry
         fuse
+        python310.pkgs.pandas
     ];
     nativeBuildInputs = with pkgs ; [
         python310.pkgs.flit-core

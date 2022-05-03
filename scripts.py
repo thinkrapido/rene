@@ -31,7 +31,7 @@ def test():
     run_dep(['nose2'])
 
 def rene():
-    run_cli('./rene/main.py')
+    run_cli('./main.py')
 
 def nuitka():
     subprocess.run(['./bin/mkexe.sh'])
